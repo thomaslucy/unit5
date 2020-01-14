@@ -7,4 +7,7 @@ public class Square {
         double area = side*side;
         return area;
     }
+    public String toString(){
+        return "Square with side " + side;
+    }
 }
