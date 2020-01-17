@@ -23,9 +23,5 @@ public class Grades
         System.out.println(student2.getAverage());
 
     }
-
-    public String toString(){
-        return 
-    }
 }
 

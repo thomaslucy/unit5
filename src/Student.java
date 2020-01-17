@@ -16,39 +16,30 @@ public class Student
     public Student(String studentName)
     {
         name = studentName;
-        score1 =
+        score1 = 0.0;
+        score2 = 0.0;
     }
 
-    //----------------------------------------------
-    //inputGrades: prompt for and read in student's grades for test1 and test2.
-    //Use name in prompts, e.g., "Enter's Joe's score for test1".
-    //-----------------------------------------------
     public void inputGrades()
     {
-        //add body of inputGrades
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter " + name + "'s score for test one");
+        score1 = scan.nextDouble();
+        System.out.println("Enter " + name + "'s score for test two");
+        score2 = scan.nextDouble();
     }
 
-    //-----------------------------------------------
-    //getAverage: compute and return the student's test average
-    //-----------------------------------------------
-
-    //add header for getAverage
-    public int getAverage()
+    public double getAverage()
     {
-       return (score1)
+       return ((score1+score2)/2);
     }
 
-    //-----------------------------------------------
-    //getName: print the student's name
-    //-----------------------------------------------
-
-    //add header for printName
+    public String getName()
     {
-        //add body of printName
+        return name;
     }
 
-    // toString method:  Output in the following format
-    // Name: Joe  Test1: 85  Test2: 91
-
-
+    public String toString(){
+        return "Name: " + name + " Test1: " + score1 + " Test2: " + score2;
+    }
 }
