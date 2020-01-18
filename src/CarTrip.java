@@ -55,10 +55,14 @@ public class CarTrip {
     }
 
     public double getAverageSpeed(){
+        if (myTime == 0)
+            return 0.0;
         return (myEndOdometer - myStartOdometer)/myGallonsUsed;
     }
 
     public double getGasMileage(){
+        if (myGallonsUsed == 0)
+            return 0.0;
         return(myEndOdometer-myStartOdometer)/myGallonsUsed;
     }
 
