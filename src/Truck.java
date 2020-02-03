@@ -17,7 +17,7 @@ public class Truck {
         this.mpg = mpg;
     }
 
-    public void setMpg(){
+    public void setMpg(double mpg){
         this.mpg = mpg;
     }
 
@@ -62,6 +62,7 @@ public class Truck {
         totalFuel += temp;
         return "success";
     }
+
     public String fill(double gallons){
         if (fuel + gallons > CAPACITY){
             return "Truck " + truckID + ": Gallons exceeds tank capacity";
