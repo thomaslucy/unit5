@@ -31,6 +31,6 @@ public class Line {
     }
 
     public String toString(){
-        return a + "x + " + b +"y + " + c + " = 0";
+        return a + "x + " + b +"y + " + c + "= 0";
     }
 }
