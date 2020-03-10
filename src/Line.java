@@ -22,15 +22,15 @@ public class Line {
             return false;
     }
 
-    public boolean isParallel(Line line){
-        double slope = (a * -1) / (b);
-        if (getSlope() == slope)
-            return true;
-        else
+    public boolean isParallel(Line lin){
+        if (this.getSlope() != lin.getSlope())
             return false;
+        else
+            return true;
     }
 
-    public String toString(){
-        return a + "x + " + b +"y + " + c + "= 0";
+    public String toString() {
+        return a + "x + " + b + "y + " + c + " = 0";
     }
-}
+    }
+

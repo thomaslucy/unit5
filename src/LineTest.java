@@ -1,4 +1,4 @@
-/*** This code is complete - it tests the class Line*/
+/** This code is complete - it tests the class Line*/
 public class LineTest {
     public static void main(String[] args)
     {
